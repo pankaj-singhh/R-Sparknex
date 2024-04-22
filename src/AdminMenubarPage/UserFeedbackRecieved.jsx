@@ -25,16 +25,16 @@ const UserFeedbackRecieved = () => {
         <div className="mx-2">
           <input className="w-4 h-4" type="checkbox" />
         </div>
-        <div className="mx-2 ml-10 ">
+        <div className="w-[150px] ml-10 ">
           <p>2024-01-15</p>
         </div>
-        <div className="mx-2 ml-12 w-[250px]  ">
+        <div className="mx-2 ml-16 w-[250px]  ">
           <p>Bug Report</p>
         </div>
-        <div className="mx-2 ml-20   w-[23rem]">
+        <div className="mx-2 ml-12   w-[23rem]">
           <p>Error when submitting</p>
         </div>
-        <div className="mx-2 ml-16">
+        <div className="mx-2 ml-12">
           <p>Encountered an error when trying to submit the form. Submit button doesn't seem to respond</p>
         </div>
        
@@ -43,16 +43,16 @@ const UserFeedbackRecieved = () => {
         <div className="mx-2">
           <input className="w-4 h-4" type="checkbox" />
         </div>
-        <div className="mx-2 ml-10 ">
+        <div className="w-[150px] ml-10 ">
           <p>2024-01-14</p>
         </div>
-        <div className="mx-2 ml-12 w-[250px] ">
+        <div className="mx-2 ml-10 w-[250px] ">
           <p>Feature Request</p>
         </div>
-        <div className=" ml-7  w-[20rem]">
+        <div className=" ml-0  w-[20rem]">
           <p>New chat feature</p>
         </div>
-        <div className=" ml-12">
+        <div className=" ml-7">
           <p>Would love to see a new chat feature added for real-time communication.</p>
         </div>
        
@@ -61,34 +61,35 @@ const UserFeedbackRecieved = () => {
         <div className="mx-2">
           <input className="w-4 h-4" type="checkbox" />
         </div>
-        <div className="mx-2 ml-10 ">
+        <div className="w-[150px] ml-7 ">
           <p>2024-01-12</p>
         </div>
-        <div className=" ml-12 w-[250px]  ">
+        <div className=" ml-10 w-[250px]  ">
           <p>General Feedback</p>
         </div>
-        <div className=" ml-7   w-[20rem]">
+        <div className=" ml-1   w-[20rem]">
           <p>User interface design</p>
         </div>
-        <div className=" ml-7">
+        <div className=" ml-2">
           <p>Really like the clean and intuitive design of the platform. Great job!</p>
         </div>
        
       </div>
+     
       <div className="flex font-bold text-gray-500 pb-1 pt-1 mt-2 rounded-xl bg-white w-[1200px]">
         <div className="mx-2">
           <input className="w-4 h-4" type="checkbox" />
         </div>
-        <div className="mx-2 ml-10 ">
+        <div className="w-[150px] ml-10 ">
           <p>2024-01-15</p>
         </div>
-        <div className="mx-2 ml-12 w-[250px]  ">
+        <div className="mx-2 ml-16 w-[250px]  ">
           <p>Bug Report</p>
         </div>
-        <div className="mx-2 ml-20   w-[23rem]">
+        <div className="mx-2 ml-12   w-[23rem]">
           <p>Error when submitting</p>
         </div>
-        <div className="mx-2 ml-16">
+        <div className="mx-2 ml-12">
           <p>Encountered an error when trying to submit the form. Submit button doesn't seem to respond</p>
         </div>
        
@@ -97,16 +98,16 @@ const UserFeedbackRecieved = () => {
         <div className="mx-2">
           <input className="w-4 h-4" type="checkbox" />
         </div>
-        <div className="mx-2 ml-10 ">
+        <div className="w-[150px] ml-10 ">
           <p>2024-01-14</p>
         </div>
-        <div className="mx-2 ml-12 w-[250px] ">
+        <div className="mx-2 ml-10 w-[250px] ">
           <p>Feature Request</p>
         </div>
-        <div className=" ml-7  w-[20rem]">
+        <div className=" ml-0  w-[20rem]">
           <p>New chat feature</p>
         </div>
-        <div className=" ml-12">
+        <div className=" ml-7">
           <p>Would love to see a new chat feature added for real-time communication.</p>
         </div>
        
@@ -115,34 +116,35 @@ const UserFeedbackRecieved = () => {
         <div className="mx-2">
           <input className="w-4 h-4" type="checkbox" />
         </div>
-        <div className="mx-2 ml-10 ">
+        <div className="w-[150px] ml-7 ">
           <p>2024-01-12</p>
         </div>
-        <div className=" ml-12 w-[250px]  ">
+        <div className=" ml-10 w-[250px]  ">
           <p>General Feedback</p>
         </div>
-        <div className=" ml-7   w-[20rem]">
+        <div className=" ml-1   w-[20rem]">
           <p>User interface design</p>
         </div>
-        <div className=" ml-7">
+        <div className=" ml-2">
           <p>Really like the clean and intuitive design of the platform. Great job!</p>
         </div>
        
       </div>
+     
       <div className="flex font-bold text-gray-500 pb-1 pt-1 mt-2 rounded-xl bg-white w-[1200px]">
         <div className="mx-2">
           <input className="w-4 h-4" type="checkbox" />
         </div>
-        <div className="mx-2 ml-10 ">
+        <div className="w-[150px] ml-10 ">
           <p>2024-01-15</p>
         </div>
-        <div className="mx-2 ml-12 w-[250px]  ">
+        <div className="mx-2 ml-16 w-[250px]  ">
           <p>Bug Report</p>
         </div>
-        <div className="mx-2 ml-20   w-[23rem]">
+        <div className="mx-2 ml-12   w-[23rem]">
           <p>Error when submitting</p>
         </div>
-        <div className="mx-2 ml-16">
+        <div className="mx-2 ml-12">
           <p>Encountered an error when trying to submit the form. Submit button doesn't seem to respond</p>
         </div>
        
@@ -151,16 +153,16 @@ const UserFeedbackRecieved = () => {
         <div className="mx-2">
           <input className="w-4 h-4" type="checkbox" />
         </div>
-        <div className="mx-2 ml-10 ">
+        <div className="w-[150px] ml-10 ">
           <p>2024-01-14</p>
         </div>
-        <div className="mx-2 ml-12 w-[250px] ">
+        <div className="mx-2 ml-10 w-[250px] ">
           <p>Feature Request</p>
         </div>
-        <div className=" ml-7  w-[20rem]">
+        <div className=" ml-0  w-[20rem]">
           <p>New chat feature</p>
         </div>
-        <div className=" ml-12">
+        <div className=" ml-7">
           <p>Would love to see a new chat feature added for real-time communication.</p>
         </div>
        
@@ -169,21 +171,21 @@ const UserFeedbackRecieved = () => {
         <div className="mx-2">
           <input className="w-4 h-4" type="checkbox" />
         </div>
-        <div className="mx-2 ml-10 ">
+        <div className="w-[150px] ml-7 ">
           <p>2024-01-12</p>
         </div>
-        <div className=" ml-12 w-[250px]  ">
+        <div className=" ml-10 w-[250px]  ">
           <p>General Feedback</p>
         </div>
-        <div className=" ml-7   w-[20rem]">
+        <div className=" ml-1   w-[20rem]">
           <p>User interface design</p>
         </div>
-        <div className=" ml-7">
+        <div className=" ml-2">
           <p>Really like the clean and intuitive design of the platform. Great job!</p>
         </div>
        
       </div>
-
+     
     </div>
   )
 }
