@@ -1,13 +1,10 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useState, useEffect } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import MenuBar from "../components/MenuBar";
 import { FiChevronRight } from "react-icons/fi";
 import { LuTicket } from "react-icons/lu";
-import DashboardSection from "./DashboardSection";
-import TicketSection from "./TicketSection";
-import EditViewSection from "./EditViewSection";
-import UserManagement from "../AdminMenubarPage/UserManagement";
+
 import admndshbrdimg1 from "../assets/admndshbrdimg1.svg";
 import logo from "../assets/Logo.svg";
 import adminwlcmscreenimg from "../assets/adminwlcmscreenimg.svg";
@@ -18,6 +15,7 @@ import dashboardimg from "../assets/dashboardimg.svg";
 import adminsideimg from "../assets/adminsideimg.svg";
 
 const DashboardLayout = () => {
+
   const navigate = useNavigate();
   const [showDashbrd, setShowDashbrd] = useState(true);
   const [showTicketSection, SetShowTicketSection] = useState(false);
@@ -37,6 +35,8 @@ const DashboardLayout = () => {
   const [category, setCategory] = useState("");
   const [dateSubmition, setDateSubmition] = useState("");
   const [userManagement, setUserManagement] = useState(false);
+  const [isMenuBarOpen, setIsMenuBarOpen] = useState(true);
+  const toggleRef = useRef(null);
 
   {
     /**for recive usetatate value from ticket section */
@@ -64,6 +64,7 @@ const DashboardLayout = () => {
 
   const handleToggle = () => {
     setIsToggeled(!isToggled);
+    setIsMenuBarOpen(!isMenuBarOpen);
   };
 
   useEffect(() => {
@@ -91,6 +92,25 @@ const DashboardLayout = () => {
     "November",
     "December",
   ];
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      
+      if (toggleRef.current && !toggleRef.current.contains(event.target)) {
+        setIsToggeled(!isToggled);
+      }
+
+      if (isMenuBarOpen) {
+        setIsMenuBarOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [isMenuBarOpen]);
   return (
     <div>
       {/**nav layout */}

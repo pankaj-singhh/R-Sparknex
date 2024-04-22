@@ -4,6 +4,8 @@ import { FiUsers } from "react-icons/fi";
 import { FiChevronRight, FiUploadCloud } from "react-icons/fi";
 import { MdOutlineMessage, MdLogout } from "react-icons/md";
 import { IoSettingsOutline } from "react-icons/io5";
+import menueimg from "../assets/menueimg.svg"
+
 
 const MenuBar = ({setShowDashbrd,setUserManagement,setDatatoParent}) => {
   const navigate=useNavigate();
@@ -34,7 +36,7 @@ const MenuBar = ({setShowDashbrd,setUserManagement,setDatatoParent}) => {
         <div className="text-sm ml-1 lg:ml-5">
           <p className="font-bold">User Management</p>
         </div>
-        <div className="ml-4 pl-3 text-lg">
+        <div className="ml-4 pl-2 text-lg">
           
             <FiChevronRight />
          
@@ -43,7 +45,7 @@ const MenuBar = ({setShowDashbrd,setUserManagement,setDatatoParent}) => {
       </div>
 
       {/* Uploads Blogs */}
-      <div to="/user-management" className="flex mt-1 text-blue-900">
+      <div to="/user-management" className="flex mt-2 text-blue-900">
         <button className="flex" onClick={UploadBlogHandler} >
         <div className="ml-1 text-lg">
           <FiUploadCloud />
@@ -60,7 +62,7 @@ const MenuBar = ({setShowDashbrd,setUserManagement,setDatatoParent}) => {
       </div>
 
       {/* Feedbacks Received */}
-      <div to="/user-management" className="flex mt-1 text-blue-900">
+      <div to="/user-management" className="flex mt-2 text-blue-900">
         <button className="flex" onClick={userFeedbackHandler} >
         <div className="ml-1 text-lg">
           <MdOutlineMessage />
@@ -68,7 +70,7 @@ const MenuBar = ({setShowDashbrd,setUserManagement,setDatatoParent}) => {
         <div className="text-sm ml-1 lg:ml-5">
           <p className="font-bold">Feedbacks Recieved</p>
         </div>
-        <div className=" pl-5 text-lg ">
+        <div className=" pl-4 text-lg ">
           
             <FiChevronRight />
          
@@ -77,10 +79,10 @@ const MenuBar = ({setShowDashbrd,setUserManagement,setDatatoParent}) => {
       </div>
 
       {/* Settings */}
-      <div to="/user-management" className="flex mt-1 text-blue-900">
+      <div to="/user-management" className="flex mt-2 text-blue-900">
         <button className="flex" onClick={userSettingsHandler} >
         <div className="ml-1 text-lg">
-          <MdOutlineMessage />
+          < IoSettingsOutline />
         </div>
         <div className="text-sm ml-1 lg:ml-5">
           <p className="font-bold">Settings</p>
@@ -116,7 +118,7 @@ const MenuBar = ({setShowDashbrd,setUserManagement,setDatatoParent}) => {
          <div> <span className="text-blue-900">Enhancing </span> 
          <span className="text-blue-400">Efficiency</span></div>
         </div>
-        <div className="pb-5"><img src="./images/menueimg.svg" alt="Image" /></div>
+        <div className="pb-5"><img src={menueimg} alt="Image" /></div>
       </div>
     </div>
   );

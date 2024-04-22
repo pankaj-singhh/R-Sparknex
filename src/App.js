@@ -19,6 +19,14 @@ import EditViewSection from "./adminpage/EditViewSection";
 import EditViewUser from "./AdminMenubarPage/EditViewUser";
 import UploadBlogs from "./AdminMenubarPage/UploadBlogs";
 import UserFeedbackRecieved from "./AdminMenubarPage/UserFeedbackRecieved";
+import DraftBlog from "./uploadBlogComponent/DraftBlog";
+import PublishedBlog from "./uploadBlogComponent/PublishedBlog";
+import CreateNewPostBlog from "./uploadBlogComponent/CreateNewPostBlog";
+import EditDraftBlog from "./uploadBlogComponent/EditDraftBlog";
+import BlogPublishedView from "./uploadBlogComponent/BlogPublishedView";
+
+
+
 
 function App() {
   return (
@@ -43,6 +51,14 @@ function App() {
          <Route path="editviewuser/:username/:email" element={<EditViewUser/>}></Route>   
          <Route path="uploadblogs" element={<UploadBlogs/>}></Route>  
          <Route path="userfeedbackrecieved" element={<UserFeedbackRecieved/>}></Route>  
+
+
+         {/**routing for blog draft and publish and edit draft part */}
+         <Route path="draftblog" element={<DraftBlog/>}></Route>
+         <Route path="publishedblog" element={<PublishedBlog/>}></Route>
+         <Route path="createnewpostblog" element={<CreateNewPostBlog/>} ></Route>
+         <Route path="editdraftblog" element={<EditDraftBlog/>}></Route>
+         <Route path="blogpublishedview" element={<BlogPublishedView/>}></Route>
         </Route>
         
       </Routes>

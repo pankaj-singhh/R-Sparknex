@@ -25,7 +25,7 @@ const EditViewSection = (props) => {
   }
   return (
     <>
-      <div className=" mt-2 border-2 border-gray-500 bg-gray-100 ml-2 lg:ml-10 rounded-xl pr-2 pb-1 pt-1 pl-2 w-[95vw] lg:w-[78vw]">
+      <div className=" mt-2 border-2 border-gray-500 bg-gray-200 ml-2 lg:ml-10 rounded-xl pr-2 pb-1 pt-1 pl-2 w-[95vw] lg:w-[78vw]">
         <div className="flex ">
           <button className="text-4xl text-center font-bold h-[2.5rem] w-[2.5rem] border-1 rounded-full bg-white text-blue-900 mt-2" onClick={backTicketSection}>
             <IoIosArrowRoundBack />
