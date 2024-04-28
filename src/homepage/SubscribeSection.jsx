@@ -11,13 +11,13 @@ const SubscribeSection = () => {
         <img className="font-bold mb-10" src="./images/Logo.svg" alt="" />
           <p className="font-bold">SparkNex</p>
         </div>
-        <div className="flex flex-col lg:flex-row justify-center items-center lg:ml-96 border lg:pl-72 ">
+        <div className="flex flex-col lg:flex-row justify-center items-center lg:ml-96  lg:pl-72 ">
           <span className="text-blue-900 text-lg">
             Subscribe To Our Newsletter
           </span>
           <div className="flex lg:ml-10">
             <input
-              className="border w-[70vw] lg:w-[25vw] mt-2 lg:mt-0 rounded "
+              className=" w-[70vw] lg:w-[25vw] mt-2 lg:mt-0 rounded "
               type="email"
               name=""
               placeholder="Enter email address"
@@ -41,7 +41,7 @@ const SubscribeSection = () => {
             Connect, Chat, Spark Conversations!
             </p>
           </div>
-          <div className="flex space-x-4 text-3xl mt-5 lg:ml-96 lg:pl-44 border">
+          <div className="flex space-x-4 text-3xl mt-5 lg:ml-96 lg:pl-44 ">
   
             <div> <button><FaFacebook/></button> </div>
             <div> <button><FaTwitter/></button> </div>

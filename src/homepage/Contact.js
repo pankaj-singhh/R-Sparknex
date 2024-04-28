@@ -12,7 +12,7 @@ const Contact = () => {
             <div className="flex flex-col">
               <span className="font-bold">Name</span>
               <input
-                className="w-[70vw] lg:w-[30vw] rounded mt-3 text-black"
+                className="w-[70vw] lg:w-[30vw] rounded mt-4 text-black"
                 type="text"
                 placeholder="Name"
               />
