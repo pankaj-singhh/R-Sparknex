@@ -30,7 +30,7 @@ const AdminLogin = () => {
   }
 
   return (
-    <div className="border-2 border-black mt-5 ">
+    <div className="mt-5 ">
       <div className="w-[80vw] h-[auto] border bg-gray-300 ml-10 lg:ml-32 rounded-xl mb-2 pb-5">
         <div className="flex justify-between items-center mt-5">
           <div className="flex ml-3 ">
