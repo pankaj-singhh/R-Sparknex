@@ -1,8 +1,5 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Main from "./homepage/Main";
-import Discover from "./homepage/Discover";
 import Home from "./components/Home";
 
 import { NavLink, Route, Routes } from "react-router-dom";
@@ -24,6 +21,11 @@ import PublishedBlog from "./uploadBlogComponent/PublishedBlog";
 import CreateNewPostBlog from "./uploadBlogComponent/CreateNewPostBlog";
 import EditDraftBlog from "./uploadBlogComponent/EditDraftBlog";
 import BlogPublishedView from "./uploadBlogComponent/BlogPublishedView";
+import SettingsMainPage from "./AdminSettingPage/SettingsMainPage";
+import GenralSetting from "./AdminSettingPage/GenralSetting";
+import SecuritySetting from "./AdminSettingPage/SecuritySetting";
+import AdvancedSetting from "./AdminSettingPage/AdvancedSetting";
+import SystemSetting from "./AdminSettingPage/SystemSetting";
 
 
 
@@ -59,6 +61,17 @@ function App() {
          <Route path="createnewpostblog" element={<CreateNewPostBlog/>} ></Route>
          <Route path="editdraftblog" element={<EditDraftBlog/>}></Route>
          <Route path="blogpublishedview" element={<BlogPublishedView/>}></Route>
+        </Route>
+
+        {/* routing for the movings settings page/section */}
+        <Route path="settingsmainpage" element={<SettingsMainPage/>}>
+
+          {/* nasted routing */}
+          <Route index element={<GenralSetting/>}></Route>
+          <Route path="genralsetting" element={<GenralSetting/>}></Route>
+          <Route path="securitysetting" element={<SecuritySetting/>}></Route>
+          <Route path="systemsetting" element={<SystemSetting/>}/>
+          <Route path="advancedsetting" element={<AdvancedSetting/>}/>
         </Route>
         
       </Routes>

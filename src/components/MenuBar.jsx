@@ -7,26 +7,48 @@ import { IoSettingsOutline } from "react-icons/io5";
 import menueimg from "../assets/menueimg.svg"
 
 
-const MenuBar = ({setShowDashbrd,setUserManagement,setDatatoParent}) => {
+const MenuBar = ({ setUserManagement, setuUploadBlogs,setFeedbacks,setDashbrdTxt,setTicketTxt}) => {
   const navigate=useNavigate();
 
   const useManagementHandler=()=>{
-   
-    navigate("/DashboardLayout/UserManagement");
+   navigate("/DashboardLayout/UserManagement");
+   setUserManagement(true);
+   setuUploadBlogs(false);
+   setFeedbacks(false);
+   setDashbrdTxt(false);
+   setTicketTxt(false);
   }
+
+
   const UploadBlogHandler=()=>{
     navigate("/DashboardLayout/UploadBlogs");
+    setUserManagement(false);
+   setuUploadBlogs(true);
+   setFeedbacks(false);
+   setDashbrdTxt(false);
+   setTicketTxt(false);
    }
+
+
  const userFeedbackHandler=()=>{
   navigate("/DashboardLayout/userfeedbackrecieved");
+  setUserManagement(false);
+   setuUploadBlogs(false);
+   setFeedbacks(true);
+   setDashbrdTxt(false);
+   setTicketTxt(false);
  }
- const userSettingsHandler=()=>{
 
+
+ const userSettingsHandler=()=>{
+  // console.log("setingspage");
+   navigate("/settingsmainpage")
  }
   return (
     <div className="w-[58vw] border-2 lg:w-[20vw] pt-5 bg-white rounded-xl">
       {/**menu */}
-      <div className="border-2 border-gray-400 bg-gray-200 w-[50vw] lg:w-[18vw] ml-2 rounded-xl">
+      <div className="border-2 border-gray-400 bg-white w-[50vw] lg:w-[18vw] ml-2 rounded-xl">
+
         {/**Usermanagement */}
         <div to="/user-management" className="flex mt-1 text-blue-900">
         <button className="flex" onClick={useManagementHandler} >
@@ -45,7 +67,7 @@ const MenuBar = ({setShowDashbrd,setUserManagement,setDatatoParent}) => {
       </div>
 
       {/* Uploads Blogs */}
-      <div to="/user-management" className="flex mt-2 text-blue-900">
+      <div to="/user-management" className="flex mt-4 text-blue-900">
         <button className="flex" onClick={UploadBlogHandler} >
         <div className="ml-1 text-lg">
           <FiUploadCloud />
@@ -62,7 +84,7 @@ const MenuBar = ({setShowDashbrd,setUserManagement,setDatatoParent}) => {
       </div>
 
       {/* Feedbacks Received */}
-      <div to="/user-management" className="flex mt-2 text-blue-900">
+      <div to="/user-management" className="flex mt-4 text-blue-900">
         <button className="flex" onClick={userFeedbackHandler} >
         <div className="ml-1 text-lg">
           <MdOutlineMessage />
@@ -79,7 +101,7 @@ const MenuBar = ({setShowDashbrd,setUserManagement,setDatatoParent}) => {
       </div>
 
       {/* Settings */}
-      <div to="/user-management" className="flex mt-2 text-blue-900">
+      <div to="/user-management" className="flex mt-4 text-blue-900">
         <button className="flex" onClick={userSettingsHandler} >
         <div className="ml-1 text-lg">
           < IoSettingsOutline />
@@ -96,15 +118,15 @@ const MenuBar = ({setShowDashbrd,setUserManagement,setDatatoParent}) => {
       </div>
 
       {/* Logout */}
-      <NavLink to="/logout" className="flex mt-10 text-red-500">
-        <div className="ml-1 text-lg">
+      <NavLink to="/logout" className="flex mt-10 lg:mt-20 text-red-500">
+        <div className="ml-1 mt-1 text-xl">
           <MdLogout />
         </div>
-        <div className="text-sm ml-1 lg:ml-5">
-          <p className="font-bold">Logout</p>
+        <div className="text-lg ml-1 lg:ml-5">
+          <p className="">Logout</p>
         </div>
         <div className="ml-20 pl-2">
-          <button className="font-bold">
+          <button className="font-bold text-xl">
             <FiChevronRight />
           </button>
         </div>

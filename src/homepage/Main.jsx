@@ -3,6 +3,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 import { FaApple } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
+ import homemobilelogo from "../assets/homemobile.svg";
 const Main = () => {
 
   const navigate=useNavigate();
@@ -13,7 +14,7 @@ const Main = () => {
   }
   return (
     <div>
-      <div className='bg-[url("assets/sparkbgimg.jpg")] bg-contain lg:bg-contain  bg-no-repeat w-[80vw]  ml-10 lg:ml-40  lg:pb-28'>
+      <div className=' bg-[url("assets/sparkbgimg.jpg")] bg-contain lg:bg-contain  bg-no-repeat w-[80vw]  ml-10 lg:ml-40  lg:pb-28 '>
         <div className="lg:flex ">
           {/*for flex internal div */}
           <div className="text pt-24 lg:pt-40">
@@ -46,12 +47,15 @@ const Main = () => {
           </div>
           {/*text div end */}
           <div className=" mt-5  lg:ml-72 lg:pb-0 lg:mt-8">
-            <img src="./images/mobileimg.png" alt="" />
+            {/* <img src="./images/mobileimg.png" alt="" /> */}
+            <img src={homemobilelogo} alt="" />
           </div>
         </div>
         {/*for flex internal div end */}
       </div>
+      
       <div className="border w-[full] h-[2px] bg-gray-300 hover:bg-blue-500"></div>
+      
     </div>
   );
 };

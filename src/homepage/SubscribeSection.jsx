@@ -8,7 +8,7 @@ const SubscribeSection = () => {
     <div>
       <div className="lg:flex">
         <div className="flex text-blue-900 ml-5">
-          <img className="font-bold" src="./images/Logo.svg" alt="" />
+        <img className="font-bold mb-10" src="./images/Logo.svg" alt="" />
           <p className="font-bold">SparkNex</p>
         </div>
         <div className="flex flex-col lg:flex-row justify-center items-center lg:ml-96 border lg:pl-72 ">

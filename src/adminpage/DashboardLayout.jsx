@@ -13,9 +13,9 @@ import adminNotfctnimg from "../assets/adminNotfctnimg.svg";
 import admnSearch from "../assets/admnSearch.svg";
 import dashboardimg from "../assets/dashboardimg.svg";
 import adminsideimg from "../assets/adminsideimg.svg";
+import Notification from "./Notification";
 
 const DashboardLayout = () => {
-
   const navigate = useNavigate();
   const [showDashbrd, setShowDashbrd] = useState(true);
   const [showTicketSection, SetShowTicketSection] = useState(false);
@@ -25,41 +25,64 @@ const DashboardLayout = () => {
     /**for notification */
   }
   const [showNotification, setShowNotification] = useState(false);
-  {
-    /**toggled Menue */
-  }
+  
+    //**toggled Menue */
   const [isToggled, setIsToggeled] = useState(false);
 
   //3 useState for recive data from ticketSection
-  const [requestId, setRequestId] = useState("");
-  const [category, setCategory] = useState("");
+  
   const [dateSubmition, setDateSubmition] = useState("");
-  const [userManagement, setUserManagement] = useState(false);
+  
   const [isMenuBarOpen, setIsMenuBarOpen] = useState(true);
   const toggleRef = useRef(null);
 
-  {
-    /**for recive usetatate value from ticket section */
-  }
+//usestate for dashboard/ticket section,change remaining   welcome text
+
+const[dashboardtxt,setDashbrdTxt]=useState(true);
+const[tickettxt,setTicketTxt]=useState(false);
+
+  //usestate for MenueBar change remaining   welcome text
+
+  const [userManagement, setUserManagement] = useState(false);
+  const[uploadBlogs,setuUploadBlogs]=useState(false);
+  const[feedbacks,setFeedbacks]=useState(false)
+    //**for recive usetatate value from ticket section 
+  
   const handledataFromChild = (data) => {
     setDataFromChild(data);
     console.log(dataFromChild);
   };
 
+  {
+    /**Notification Handler function */
+  }
+
+  const displayNotificationHandler = () => {
+    setShowNotification(true);
+  };
+
   const DashboardSectionHandler = () => {
     navigate("/DashboardLayout/DashboardSection");
     setShowDashbrd(true);
-    // setDataFromChild(false);
+    setTicketTxt(false);
     SetShowTicketSection(false);
-    // console.log("setshow Dashbord");
+    setDashbrdTxt(true);
+    setUserManagement(false)
+    setuUploadBlogs(false)
+    setFeedbacks(false)
+    
   };
 
   const TicketSectionHandler = () => {
     navigate("/DashboardLayout/TicketSection");
     setShowDashbrd(false);
-    setDataFromChild(false);
+    setTicketTxt(true);
     SetShowTicketSection(true);
-    console.log("showTicket section");
+    setDashbrdTxt(false);
+    setUserManagement(false)
+    setuUploadBlogs(false)
+    setFeedbacks(false)
+    
   };
 
   const handleToggle = () => {
@@ -95,7 +118,6 @@ const DashboardLayout = () => {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      
       if (toggleRef.current && !toggleRef.current.contains(event.target)) {
         setIsToggeled(!isToggled);
       }
@@ -111,23 +133,31 @@ const DashboardLayout = () => {
       document.removeEventListener("click", handleClickOutside);
     };
   }, [isMenuBarOpen]);
+
   return (
     <div>
+      {showNotification && (
+        <Notification setShowNotification={setShowNotification} />
+      )}
+
       {/**nav layout */}
       <div className="bg-gray-200 lg:pl-10 lg:pt-10 rounded-xl mt-2 pt-5">
         <div className="flex flex-col lg:flex-row">
+
+
           {/**left section div */}
+
           <div className="flex flex-row lg:flex-col">
             <div className="flex ">
               <div>
                 <button onClick={handleToggle}>
                   {isToggled ? (
                     <span>
-                      <img src={admndshbrdimg1} alt="togle" />
+                      <img className="w-16" src={admndshbrdimg1} alt="togle" />
                     </span>
                   ) : (
                     <span className="border-2">
-                      <img className="" src={admndshbrdimg1} alt="Togle" />
+                      <img className="w-16" src={admndshbrdimg1} alt="Togle" />
                     </span>
                   )}
                 </button>
@@ -135,12 +165,16 @@ const DashboardLayout = () => {
                   <div className="absolute z-10">
                     <MenuBar
                       setUserManagement={setUserManagement}
-                      setShowDashbrd={setShowDashbrd}
-                      setDatatoParent={handledataFromChild}
+                      setuUploadBlogs={setuUploadBlogs}
+                     setFeedbacks={setFeedbacks}
+                     setDashbrdTxt={setDashbrdTxt}
+                     setTicketTxt={setTicketTxt}
                     />
                   </div>
                 )}
               </div>
+
+              {/**sparknex LOgo and name */}
               <div>
                 <div className="flex mt-8">
                   <div className="flex-shrink-0 flex items-center">
@@ -153,7 +187,8 @@ const DashboardLayout = () => {
               </div>
             </div>
 
-            {/**Current Date section */}
+            {/**            Current Date section        */}
+
             <div className="flex ml-5 text-gray-600 lg:mt-5">
               <div className="border-gray-600 border-2 w-[50px] h-[50px] text-center pt-1.5 rounded-full text-2xl">
                 <p className="lg:font-bold">{currentDate.getDate()}</p>
@@ -173,7 +208,8 @@ const DashboardLayout = () => {
             </div>
           </div>
 
-          {/**right side section */}
+
+          {/**          right side section          */}
           <div>
             {/**admin container */}
             <div className="mt-10 lg:mt-0 lg:ml-96 lg:pl-20">
@@ -186,22 +222,13 @@ const DashboardLayout = () => {
                   <p>CEO Assistant</p>
                 </div>
                 <div className="w-[60px] h-[60px] lg:ml-2">
-                  <button
-                    className=""
-                    onMouseEnter={() => setShowNotification(true)}
-                    onMouseLeave={() => setShowNotification(false)}
-                  >
+                  <button onClick={displayNotificationHandler}>
                     <img
                       className=""
                       src={adminNotfctnimg}
                       alt="adminNotfctnimg"
                     />
                   </button>
-                  {showNotification && (
-                    <div className="absolute bg-gray-200 border border-gray-300 p-2 rounded  ">
-                      No Notification here
-                    </div>
-                  )}
                 </div>
                 <div className="border-2 w-[50px] h-[50px] rounded-full ">
                   <button>
@@ -222,11 +249,20 @@ const DashboardLayout = () => {
                 </div>
                 <div>
                   <p className="font-bold lg:text-xl">Welcome to the</p>
-                  {showDashbrd ? (
+                  {dashboardtxt ? (
                     <p className="text-gray-700 lg:text-xl">Admin Dashboard </p>
                   ) : (
-                    <p className="text-gray-700 lg:text-xl">Support Center </p>
+                    ""
                   )}
+
+                  {tickettxt ? (
+                    <p className="text-gray-700 lg:text-xl">Support Center </p>
+                  ) : (
+                    ""
+                  )}
+                  {userManagement?( <p className="text-gray-700 lg:text-xl">User Management Hub </p>):("")}
+                  {uploadBlogs?( <p className="text-gray-700 lg:text-xl">Upload Center </p>):("")}
+                  {feedbacks?( <p className="text-gray-700 lg:text-xl">Feedback Center </p>):("")}
                 </div>
               </div>
               {/**admin container end */}
@@ -237,7 +273,7 @@ const DashboardLayout = () => {
         {/**Upper section of dashboard end*/}
       </div>
 
-      {/**sideLayout + Dashbord section/TicketSection */}
+      {/**          sideLayout + Dashbord section/TicketSection         */}
       <div className="flex flex-col lg:flex-row pb-5 mt-10">
         {/**sideLayout */}
         <div className="flex flex-col-reverse lg:flex-col">
@@ -259,14 +295,7 @@ const DashboardLayout = () => {
               ) : (
                 <div className="flex">
                   <div>
-                  
-                    <img
-                      
-                      src={dashboardimg}
-                      alt="dashboardimg"
-                    />
-                    
-
+                    <img src={dashboardimg} alt="dashboardimg" />
                   </div>
                   <p className="text-red-400 font-bold ml-4">Dashboard</p>
                   <button
