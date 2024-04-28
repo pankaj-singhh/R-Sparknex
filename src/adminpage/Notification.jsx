@@ -18,9 +18,9 @@ const Notification = ({setShowNotification}) => {
   return (
 
     <div className=" fixed inset-0 flex items-center justify-center ">
-      <div className=" bg-white rounded-xl   border-2 pl-5 pr-5 pb-2 pt-3 shadow-lg">
+      <div className=" bg-white rounded-xl   border-2 pl-5 pr-5 pb-2 pt-8 shadow-lg">
       <div className=" mb-1 flex">
-          <h1 className="text-xl lg:text-2xl  font-md text-blue-900 ">
+          <h1 className="text-xl lg:text-2xl  font-bold text-blue-900 ">
           Notification Inbox
           </h1>
           <button
@@ -30,7 +30,7 @@ const Notification = ({setShowNotification}) => {
             <GrClose />
           </button>
         </div>
-        <div className="text-gray-500 font-semibold text-sm">
+        <div className="text-gray-500 font-bold text-sm py-3">
             <p>You have new notifications. Stay up to date with the latest updates and alerts.</p>
         </div>
         <div className="mt-2 flex bg-gray-100 rounded-xl py-2 px-2">

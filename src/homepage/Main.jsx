@@ -15,7 +15,7 @@ const Main = () => {
   return (
     <div>
       <div className=' bg-[url("assets/sparkbgimg.jpg")] bg-contain lg:bg-contain  bg-no-repeat w-[80vw]  ml-10 lg:ml-40  lg:pb-28 '>
-        <div className="lg:flex ">
+        <div className="md:flex md:justify-center md:items-center ">
           {/*for flex internal div */}
           <div className="text pt-24 lg:pt-40">
             <div className="text-xl lg:text-3xl text-blue-900">

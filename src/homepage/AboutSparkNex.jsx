@@ -12,8 +12,8 @@ const AboutSparkNex = () => {
         </div>
       </div>
       <div className=" text-white flex flex-col lg:flex-row justify-center items-center  lg:justify-start lg:ml-20 mt-10">
-        <div className="lg:absolute border w-[150px] h-[35px] text-center bg-white rounded-lg">
-          <p className="text-blue-900 font-bold">About SparkNex</p>
+        <div className="lg:absolute border w-[180px] py-2 px-2 text-center bg-white rounded-lg shadow-xl">
+          <p className="text-blue-900 font-bold text-lg">About SparkNex</p>
         </div>
         <div className="bg-blue-900 w-[80vw] rounded-2xl pt-5 lg:pt-10 lg:static  lg:ml-20 lg:h-[20vh] mt-5 lg:mt-0 text-lg ">
           <p className="w-[75vw] lg:w-[60vw] ml-5 pt-2 pb-5 lg:ml-32">
@@ -25,8 +25,8 @@ const AboutSparkNex = () => {
       </div>
       {/* next Component2*/}
       <div className=" text-white flex flex-col lg:flex-row justify-center items-center  lg:justify-start lg:ml-20 mt-10">
-        <div className="lg:absolute border w-[150px] h-[35px] text-center bg-white rounded-lg">
-          <p className="text-blue-900 font-bold">Our Mission</p>
+        <div className="lg:absolute border w-[180px] py-2 px-2 text-center bg-white rounded-lg shadow-xl">
+          <p className="text-blue-900 font-bold text-lg">Our Mission</p>
         </div>
         <div className="bg-blue-900 w-[80vw] rounded-2xl pt-5 lg:pt-10 lg:static lg:ml-20 lg:h-[20vh] mt-5 lg:mt-0 text-lg">
           <p className="w-[75vw] lg:w-[60vw] ml-5 pt-2 pb-5 lg:ml-32">
@@ -39,8 +39,8 @@ const AboutSparkNex = () => {
       </div>
       {/*next component */}
       <div className=" text-white flex flex-col lg:flex-row justify-center items-center  lg:justify-start lg:ml-20 mt-10">
-        <div className="lg:absolute border w-[180px] h-[35px] bg-white rounded-lg text-center">
-          <p className="text-blue-900 font-bold">Our Vision</p>
+        <div className="lg:absolute border w-[180px] py-2 bg-white rounded-lg text-center shadow-xl">
+          <p className="text-blue-900 font-bold text-lg">Our Vision</p>
         </div>
         <div className="bg-blue-900 w-[80vw] rounded-2xl pt-5 lg:pt-10 lg:static lg:ml-20 lg:h-[20vh] mt-5 lg:mt-0 text-lg">
           <p className="w-[75vw] lg:w-[60vw] ml-5 pt-2 pb-5 lg:ml-32">

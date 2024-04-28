@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        customIndigo:'rgb(51, 40, 133)',
+      },
+    },
   },
   plugins: [],
 }

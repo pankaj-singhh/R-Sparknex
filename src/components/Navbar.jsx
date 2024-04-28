@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import sparknexlogo from "../assets/sparknexlogo.svg"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,50 +10,48 @@ const Navbar = () => {
   };
 
   return (
-    <div>
-      <nav className="bg-gray-100 shadow-lg">
+    <div className="">
+      <nav className="bg-gray-100 shadow-lg ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex">
               <div className="flex-shrink-0 flex items-center">
                 <img
                   className="block lg:hidden h-10 w-auto"
-                  src="./images/Logo.svg"
+                  src={sparknexlogo}
                   alt="Logo"
                 />
                 <img
                   className="hidden lg:block h-10 w-auto"
-                  src="./images/Logo.svg"
+                  src={sparknexlogo}
                   alt="Logo"
                 />
-                <span className="text-blue-500 ml-2 text-lg font-semibold">
-                  SparkNex
-                </span>
+               
               </div>
             </div>
             <div className="hidden md:flex items-center">
               <div className="ml-10 flex items-baseline space-x-4">
                 <NavLink
                   to="/"
-                  className="text-blue-600 hover:bg-gray-700 px-3 py-2 rounded-mtoxt-sm font-medium"
+                  className="text-customIndigo hover:bg-gray-500 px-3 py-2 rounded-sm font-medium"
                 >
                   Home
                 </NavLink>
                 <NavLink
                   to="/features"
-                  className="text-blue-500 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-customIndigo hover:bg-gray-500 px-3 py-2 rounded-sm font-medium"
                 >
                   Features
                 </NavLink>
                 <NavLink
                   to="/aboutus"
-                  className="text-blue-500 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-customIndigo hover:bg-gray-500 px-3 py-2 rounded-md  font-medium"
                 >
                   About Us
                 </NavLink>
                 <NavLink
                   to="/contactus"
-                  className="text-blue-500 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-customIndigo hover:bg-gray-500 px-3 py-2 rounded-md  font-medium"
                 >
                   Contact Us
                 </NavLink>
@@ -61,7 +60,7 @@ const Navbar = () => {
             <div className="md:hidden flex items-center">
               <button
                 onClick={toggleMenu}
-                className="block text-blue-500 hover:text-black focus:text-black focus:outline-none"
+                className="block text-customIndigo hover:text-black focus:text-black focus:outline-none"
               >
                 <svg
                   className="h-6 w-6"
@@ -93,25 +92,25 @@ const Navbar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <NavLink
               to="/"
-              className="text-blue-500 block hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium"
+              className="text-customIndigo block hover:bg-gray-500 px-3 py-2 rounded-md text-base font-medium"
             >
               Home
             </NavLink>
             <NavLink
               to="/features"
-              className="text-blue-500 block hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium"
+              className="text-blue-customIndigo hover:bg-gray-500 px-3 py-2 rounded-md text-base font-medium"
             >
               Features
             </NavLink>
             <NavLink
               to="/aboutus"
-              className="text-blue-500 block hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium"
+              className="text-blue-customIndigo hover:bg-gray-500 px-3 py-2 rounded-md text-base font-medium"
             >
               About Us
             </NavLink>
             <NavLink
               to="/contactus"
-              className="text-blue-500 block hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium"
+              className="text-customIndigo block hover:bg-gray-500 px-3 py-2 rounded-md text-base font-medium"
             >
               Contact Us
             </NavLink>

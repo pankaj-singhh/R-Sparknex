@@ -7,6 +7,7 @@ import { LuTicket } from "react-icons/lu";
 
 import admndshbrdimg1 from "../assets/admndshbrdimg1.svg";
 import logo from "../assets/Logo.svg";
+import sparknexlogo from "../assets/sparknexlogo.svg"
 import adminwlcmscreenimg from "../assets/adminwlcmscreenimg.svg";
 import adminimg from "../assets/adminimg.svg";
 import adminNotfctnimg from "../assets/adminNotfctnimg.svg";
@@ -178,10 +179,8 @@ const[tickettxt,setTicketTxt]=useState(false);
               <div>
                 <div className="flex mt-8">
                   <div className="flex-shrink-0 flex items-center">
-                    <img className=" h-10 w-auto" src={logo} alt="Logo" />
-                    <span className="text-blue-500 ml-2 lg:text-lg font-semibold">
-                      SparkNex
-                    </span>
+                    <img className=" h-10 w-auto" src={sparknexlogo} alt="SparknexLogo" />
+                    
                   </div>
                 </div>
               </div>

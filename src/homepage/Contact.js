@@ -4,11 +4,11 @@ const Contact = () => {
   return (
     <div className="pb-10">
       <div className=" text-white flex flex-col lg:flex-row justify-center items-center  lg:justify-start lg:ml-20 mt-10">
-        <div className="lg:absolute border w-[180px] h-[35px] bg-white rounded-lg text-center lg:mb-64 lg:ml-10">
-          <p className="text-blue-900 font-bold">Get in Touch!</p>
+        <div className="lg:absolute border w-[180px] py-2 bg-white rounded-lg text-center lg:mb-64 lg:ml-10 shadow-xl">
+          <p className="text-blue-900 font-bold text-lg">Get in Touch!</p>
         </div>
-        <div className="bg-blue-900 w-[80vw] rounded-2xl pt-10 lg:pt-16 lg:static lg:ml-20 lg:h-[50vh] mt-5 lg:mt-0 pl-5 lg:pl-28 ">
-          <div className="flex flex-col lg:flex-row">
+        <div className="bg-blue-900 w-[80vw] rounded-2xl pt-10 lg:pt-16 lg:static lg:ml-20 lg:h-[50vh] mt-5 lg:mt-3 pl-5 lg:pl-28 ">
+          <div className="flex flex-col lg:flex-row mt-5">
             <div className="flex flex-col">
               <span className="font-bold">Name</span>
               <input

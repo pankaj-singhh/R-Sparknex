@@ -2,14 +2,15 @@ import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { FaFacebook, FaLinkedin } from "react-icons/fa6";
 import { FaTwitter,FaInstagram } from "react-icons/fa6";
+import sparknexlogo from "../assets/sparknexlogo.svg"
 
 const SubscribeSection = () => {
   return (
     <div>
       <div className="lg:flex">
         <div className="flex text-blue-900 ml-5">
-        <img className="font-bold mb-10" src="./images/Logo.svg" alt="" />
-          <p className="font-bold">SparkNex</p>
+        <img className="font-bold mb-10" src={sparknexlogo} alt="" />
+         
         </div>
         <div className="flex flex-col lg:flex-row justify-center items-center lg:ml-96  lg:pl-72 ">
           <span className="text-blue-900 text-lg">

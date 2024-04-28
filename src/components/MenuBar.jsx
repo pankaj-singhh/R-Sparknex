@@ -45,9 +45,9 @@ const MenuBar = ({ setUserManagement, setuUploadBlogs,setFeedbacks,setDashbrdTxt
    navigate("/settingsmainpage")
  }
   return (
-    <div className="w-[58vw] border-2 lg:w-[20vw] pt-5 bg-white rounded-xl">
+    <div className="w-[58vw] border-2 lg:w-[20vw] pt-5 pl-7 bg-white rounded-xl">
       {/**menu */}
-      <div className="border-2 border-gray-400 bg-white w-[50vw] lg:w-[18vw] ml-2 rounded-xl">
+      <div className="border  bg-white w-[50vw] lg:w-[15vw]  rounded-xl shadow-md pl-2 pt-2">
 
         {/**Usermanagement */}
         <div to="/user-management" className="flex mt-1 text-blue-900">
