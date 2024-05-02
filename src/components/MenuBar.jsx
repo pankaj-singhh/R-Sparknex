@@ -50,7 +50,7 @@ const MenuBar = ({ setUserManagement, setuUploadBlogs,setFeedbacks,setDashbrdTxt
       <div className="border  bg-white w-[50vw] lg:w-[15vw]  rounded-xl shadow-md pl-2 pt-2">
 
         {/**Usermanagement */}
-        <div to="/user-management" className="flex mt-1 text-blue-900">
+        <div to="/user-management" className="flex mt-1 text-customIndigo">
         <button className="flex" onClick={useManagementHandler} >
         <div className="ml-1 text-lg">
           <FiUsers />
@@ -67,7 +67,7 @@ const MenuBar = ({ setUserManagement, setuUploadBlogs,setFeedbacks,setDashbrdTxt
       </div>
 
       {/* Uploads Blogs */}
-      <div to="/user-management" className="flex mt-4 text-blue-900">
+      <div to="/user-management" className="flex mt-4 text-customIndigo">
         <button className="flex" onClick={UploadBlogHandler} >
         <div className="ml-1 text-lg">
           <FiUploadCloud />
@@ -84,7 +84,7 @@ const MenuBar = ({ setUserManagement, setuUploadBlogs,setFeedbacks,setDashbrdTxt
       </div>
 
       {/* Feedbacks Received */}
-      <div to="/user-management" className="flex mt-4 text-blue-900">
+      <div to="/user-management" className="flex mt-4 text-customIndigo">
         <button className="flex" onClick={userFeedbackHandler} >
         <div className="ml-1 text-lg">
           <MdOutlineMessage />
@@ -101,7 +101,7 @@ const MenuBar = ({ setUserManagement, setuUploadBlogs,setFeedbacks,setDashbrdTxt
       </div>
 
       {/* Settings */}
-      <div to="/user-management" className="flex mt-4 text-blue-900">
+      <div to="/user-management" className="flex mt-4 text-customIndigo">
         <button className="flex" onClick={userSettingsHandler} >
         <div className="ml-1 text-lg">
           < IoSettingsOutline />

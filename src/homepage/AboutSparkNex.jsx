@@ -15,7 +15,7 @@ const AboutSparkNex = () => {
         <div className="lg:absolute border w-[180px] py-2 px-2 text-center bg-white rounded-lg shadow-xl">
           <p className="text-blue-900 font-bold text-lg">About SparkNex</p>
         </div>
-        <div className="bg-blue-900 w-[80vw] rounded-2xl pt-5 lg:pt-10 lg:static  lg:ml-20 lg:h-[20vh] mt-5 lg:mt-0 text-lg ">
+        <div className="bg-blue-900 w-[80vw] rounded-2xl pt-5 lg:pt-10 lg:static  lg:ml-20  mt-5 lg:mt-0 text-lg ">
           <p className="w-[75vw] lg:w-[60vw] ml-5 pt-2 pb-5 lg:ml-32">
             About SparkNex SparkNex is a social platform designed to spark
             meaningful conversations and connections. Our mission is to bring
@@ -28,7 +28,7 @@ const AboutSparkNex = () => {
         <div className="lg:absolute border w-[180px] py-2 px-2 text-center bg-white rounded-lg shadow-xl">
           <p className="text-blue-900 font-bold text-lg">Our Mission</p>
         </div>
-        <div className="bg-blue-900 w-[80vw] rounded-2xl pt-5 lg:pt-10 lg:static lg:ml-20 lg:h-[20vh] mt-5 lg:mt-0 text-lg">
+        <div className="bg-blue-900 w-[80vw] rounded-2xl pt-5 pb-1 lg:pt-10 lg:static lg:ml-20  mt-5 lg:mt-0 text-lg">
           <p className="w-[75vw] lg:w-[60vw] ml-5 pt-2 pb-5 lg:ml-32">
             Our mission is to create a safe and inclusive space where
             individuals can connect, chat, and share their interests with
@@ -42,7 +42,7 @@ const AboutSparkNex = () => {
         <div className="lg:absolute border w-[180px] py-2 bg-white rounded-lg text-center shadow-xl">
           <p className="text-blue-900 font-bold text-lg">Our Vision</p>
         </div>
-        <div className="bg-blue-900 w-[80vw] rounded-2xl pt-5 lg:pt-10 lg:static lg:ml-20 lg:h-[20vh] mt-5 lg:mt-0 text-lg">
+        <div className="bg-blue-900 w-[80vw] rounded-2xl pt-5 lg:pt-10 lg:static lg:ml-20  mt-5 lg:mt-0 text-lg">
           <p className="w-[75vw] lg:w-[60vw] ml-5 pt-2 pb-5 lg:ml-32">
             Our vision is to become the leading platform for fostering genuine
             connections and conversations online. We envision a world where

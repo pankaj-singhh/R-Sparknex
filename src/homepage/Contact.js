@@ -7,7 +7,7 @@ const Contact = () => {
         <div className="lg:absolute border w-[180px] py-2 bg-white rounded-lg text-center lg:mb-64 lg:ml-10 shadow-xl">
           <p className="text-blue-900 font-bold text-lg">Get in Touch!</p>
         </div>
-        <div className="bg-blue-900 w-[80vw] rounded-2xl pt-10 lg:pt-16 lg:static lg:ml-20 lg:h-[50vh] mt-5 lg:mt-3 pl-5 lg:pl-28 ">
+        <div className="bg-blue-900 w-[80vw] rounded-2xl pt-10 lg:pt-16 lg:static lg:ml-20  mt-5 lg:mt-3 pl-5 lg:pl-28 ">
           <div className="flex flex-col lg:flex-row mt-5">
             <div className="flex flex-col">
               <span className="font-bold">Name</span>
@@ -41,17 +41,17 @@ const Contact = () => {
           <div className="lg:absolute">
             <img src="./images/contactimg1.svg" alt="" />
           </div>
-          <div className="bg-blue-900 w-[70vw] lg:w-[30vw] rounded-2xl pt-5 lg:pt-10 lg:static lg:ml-20 lg:h-[20vh]">
+          <div className="bg-blue-900 w-[70vw] lg:w-[30vw] rounded-2xl pt-5 lg:pt-10 lg:static lg:ml-20 pb-5">
             <p className="text-2xl font-bold w-[60vw]lg:w-[20vw] ml-5 lg:ml-32">
               123 SparkNex Street, City, Country
             </p>
           </div>
         </div>
-        <div className=" text-white flex flex-col lg:flex-row justify-center items-center  lg:justify-start lg:ml-60 mt-10">
+        <div className=" text-white flex flex-col lg:flex-row justify-center items-center  lg:justify-start  lg:ml-60 mt-10">
           <div className="lg:absolute">
             <img src="./images/contactimg2.svg" alt="" />
           </div>
-          <div className="bg-blue-900 w-[70vw] lg:w-[30vw] rounded-2xl pt-5 lg:pt-10 lg:static lg:ml-20 lg:h-[20vh]">
+          <div className="bg-blue-900 w-[70vw] lg:w-[30vw] rounded-2xl pt-5 lg:pt-10 lg:static lg:ml-20 pb-5">
             <p className="text-2xl font-bold w-[20vw] ml-5 lg:ml-32">
               info@sparknex.com
             </p>
