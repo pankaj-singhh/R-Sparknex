@@ -82,7 +82,7 @@ const AdminSignUp = () => {
                 Submit
                 </button>
             </div>
-            <div className="bg-blue-900 text-white  w-[60vw] h-[15vh] ml-5 lg:w-[30vw] lg:h-[12vh] rounded-lg mt-8 ">
+            <div className="bg-blue-900 text-white  w-[60vw] pb-2 ml-5 lg:w-[30vw]  rounded-lg mt-8 ">
               <p className="pl-5">
                 Upon successful signup, a generated password will be sent to
                 your email address. Use this password to log in to the admin

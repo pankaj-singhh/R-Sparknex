@@ -121,7 +121,7 @@ const AdminLogin = () => {
             <div className="w-[200px] lg:w-[450px] h-[30px]  bg-blue-900 rounded-2xl text-center mt-5 ml-5 ">
               <button className="text-white font-bold" onClick={clickNavigateAdminDashboard}>Login</button>
             </div>
-            <div className="bg-blue-900 text-white  w-[60vw] h-[10vh] ml-5 lg:w-[30vw] lg:h-[10vh] rounded-lg mt-8 ">
+            <div className="bg-blue-900 text-white  w-[60vw] pb-2 ml-5 lg:w-[30vw]  rounded-lg mt-8 ">
               <p className="pl-5">
                 If you are having any trouble, immediately contact the concerned
                 authorities.
