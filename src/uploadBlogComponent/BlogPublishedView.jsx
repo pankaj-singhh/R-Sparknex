@@ -82,7 +82,7 @@ const BlogPublishedView = () => {
       </div>
       <div className="flex flex-col md:flex-row">
         <div>
-          <p className="w-[18rem] md:w-[28rem] lg:w-[40rem] h-[15.5rem] ml-[3.5rem] rounded-2xl pl-3 pt-2 pb-2 pr-2 mt-5 border-2 bg-white text-sm overflow-y-scroll">
+          <p className="w-[17rem] md:w-[28rem] lg:w-[40rem] h-[15.5rem] ml-[3.5rem] rounded-2xl pl-3 pt-2 pb-2 pr-2 mt-5 border-2 bg-white text-sm overflow-y-scroll">
             In recent years, the integration of artificial intelligence (AI) in
             the healthcare industry has revolutionized the way medical
             professionals diagnose and treat various conditions. AI-powered
@@ -110,10 +110,7 @@ const BlogPublishedView = () => {
             are deployed responsibly and ethically. In conclusion, the
             integration of AI in modern healthcare holds immense promise for
             improving patient care, enhancing diagnostic accuracy, and driving
-            innovation in medical research. However, it is essential for
-            healthcare stakeholders to navigate the complex ethical and
-            regulatory landscape to realize the full potential of AI while
-            safeguarding patient privacy and safety.
+            innovation in medical research.
           </p>
 
           <p className="text-lg text-gray-600  ml-[3.5rem] rounded-2xl pl-3 pt-2 pb-2 pr-3 mt-3 bg-white ">

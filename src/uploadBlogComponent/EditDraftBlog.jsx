@@ -85,7 +85,7 @@ const EditDraftBlog = () => {
             name="Description"
             id=""
             placeholder="write the Blog Here........"
-            className="w-[18rem] md:w-[28rem] lg:w-[40rem] h-[15.5rem] ml-[3.5rem] rounded-2xl pl-3 pt-2 pb-2 pr-2 mt-5"
+            className="w-[17rem] md:w-[28rem] lg:w-[40rem] h-[15.5rem] ml-[3.5rem] rounded-2xl pl-3 pt-2 pb-2 pr-2 mt-5"
           ></textarea>
 
           <p className="text-lg text-gray-600  ml-[3.5rem] rounded-2xl pl-3 pt-2 pb-2 pr-3 mt-3 bg-white ">
@@ -99,7 +99,7 @@ const EditDraftBlog = () => {
               <LuCalendarClock />
             </p>
           </div>
-          <div className="w-[18rem] md:w-[25rem] h-[8rem] bg-white rounded-2xl pt-3 pl-5 ml-12 lg:ml-10 mt-5">
+          <div className="w-[17rem] md:w-[25rem] h-[8rem] bg-white rounded-2xl pt-3 pl-5 ml-12 lg:ml-10 mt-5">
             <p className="font-bold text-blue-900">Status</p>
             <p>
               <span>Draft</span>

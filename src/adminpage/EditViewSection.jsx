@@ -60,7 +60,7 @@ const EditViewSection = (props) => {
               name="Comment"
               id=""
               placeholder="Add Comment"
-              className=" w-[18rem] lg:w-[40rem] h-[12.5rem] rounded-xl pl-2 pt-2 "
+              className=" w-[16rem] md:w-[40rem] h-[12.5rem] rounded-xl pl-2 pt-2 "
             ></textarea>
           </div>
           <div>
@@ -69,7 +69,7 @@ const EditViewSection = (props) => {
                 <p className="font-bold text-blue-900">Status</p>
                 <p>
                   <span>Open</span>
-                  <span className=" ml-16 lg:ml-20">
+                  <span className=" ml-[15vw] lg:ml-20">
                     <input
                       type="radio"
                       name="status"
@@ -81,7 +81,7 @@ const EditViewSection = (props) => {
                 </p>
                 <p>
                   <span>In Progress</span>
-                  <span className="ml-6 lg:ml-10">
+                  <span className="ml-[5vw] lg:ml-10">
                     <input
                       type="radio"
                       name="status"
@@ -93,7 +93,7 @@ const EditViewSection = (props) => {
                 </p>
                 <p>
                   <span>Close</span>
-                  <span className="ml-16 lg:ml-20">
+                  <span className="ml-[16vw] lg:ml-20">
                     <input
                       type="radio"
                       name="status"
@@ -108,7 +108,7 @@ const EditViewSection = (props) => {
                 <p className="font-bold text-blue-900">Priority</p>
                 <p>
                   <span>High</span>
-                  <span className="ml-16">
+                  <span className="ml-[16vw] md:ml-16">
                     <input
                       type="radio"
                       name="priority"
@@ -120,7 +120,7 @@ const EditViewSection = (props) => {
                 </p>
                 <p>
                   <span>Meduim</span>
-                  <span className="ml-10">
+                  <span className=" ml-[10vw] md:ml-10">
                     <input
                       type="radio"
                       name="priority"
@@ -132,7 +132,7 @@ const EditViewSection = (props) => {
                 </p>
                 <p>
                   <span>Low</span>
-                  <span className="ml-[4.5rem]">
+                  <span className="ml-[18vw] ml- md:ml-[4.5rem]">
                     <input
                       type="radio"
                       name="priority"
