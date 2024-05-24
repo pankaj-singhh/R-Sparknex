@@ -1,12 +1,21 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import sparknexlogo from "../assets/sparknexlogo.svg"
+import { HashLink } from 'react-router-hash-link';
+
+import sparknexlogo from "../assets/sparknexlogo.svg";
+import Features from "./Features";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -70; // Adjust this value to account for your fixed navbar height
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
   };
 
   return (
@@ -26,7 +35,6 @@ const Navbar = () => {
                   src={sparknexlogo}
                   alt="Logo"
                 />
-               
               </div>
             </div>
             <div className="hidden md:flex items-center">
@@ -37,24 +45,27 @@ const Navbar = () => {
                 >
                   Home
                 </NavLink>
-                <NavLink
-                  to="/features"
+                <HashLink
+                  to="/#features"
                   className="text-customIndigo hover:bg-gray-500 px-3 py-2 rounded-sm font-medium"
+                  scroll={el => scrollWithOffset(el)}
                 >
                   Features
-                </NavLink>
-                <NavLink
-                  to="/aboutus"
-                  className="text-customIndigo hover:bg-gray-500 px-3 py-2 rounded-md  font-medium"
+                </HashLink>
+                <HashLink
+                  to="/#aboutus"
+                  className="text-customIndigo hover:bg-gray-500 px-3 py-2 rounded-md font-medium"
+                  scroll={el => scrollWithOffset(el)}
                 >
                   About Us
-                </NavLink>
-                <NavLink
-                  to="/contactus"
-                  className="text-customIndigo hover:bg-gray-500 px-3 py-2 rounded-md  font-medium"
+                </HashLink>
+                <HashLink
+                  to="/#contactus"
+                  className="text-customIndigo hover:bg-gray-500 px-3 py-2 rounded-md font-medium"
+                  scroll={el => scrollWithOffset(el)}
                 >
                   Contact Us
-                </NavLink>
+                </HashLink>
               </div>
             </div>
             <div className="md:hidden flex items-center">
@@ -96,24 +107,27 @@ const Navbar = () => {
             >
               Home
             </NavLink>
-            <NavLink
-              to="/features"
-              className="text-blue-customIndigo hover:bg-gray-500 px-3 py-2 rounded-md text-base font-medium"
+            <HashLink
+              to="/#features"
+              className="text-customIndigo block hover:bg-gray-500 px-3 py-2 rounded-md text-base font-medium"
+              scroll={el => scrollWithOffset(el)}
             >
               Features
-            </NavLink>
-            <NavLink
-              to="/aboutus"
-              className="text-blue-customIndigo hover:bg-gray-500 px-3 py-2 rounded-md text-base font-medium"
+            </HashLink>
+            <HashLink
+              to="/#aboutus"
+              className="text-customIndigo block hover:bg-gray-500 px-3 py-2 rounded-md text-base font-medium"
+              scroll={el => scrollWithOffset(el)}
             >
               About Us
-            </NavLink>
-            <NavLink
-              to="/contactus"
+            </HashLink>
+            <HashLink
+              to="/#contactus"
               className="text-customIndigo block hover:bg-gray-500 px-3 py-2 rounded-md text-base font-medium"
+              scroll={el => scrollWithOffset(el)}
             >
               Contact Us
-            </NavLink>
+            </HashLink>
           </div>
         </div>
       </nav>

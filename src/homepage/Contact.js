@@ -2,7 +2,8 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="pb-10">
+    <div id="contactus"
+    className="pb-10">
       <div className=" text-white flex flex-col lg:flex-row justify-center items-center  lg:justify-start lg:ml-20 mt-10">
         <div className="lg:absolute border w-[180px] py-2 bg-white rounded-lg text-center lg:mb-64 lg:ml-10 shadow-xl">
           <p className="text-blue-900 font-bold text-lg">Get in Touch!</p>

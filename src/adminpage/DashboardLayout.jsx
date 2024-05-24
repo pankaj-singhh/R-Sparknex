@@ -135,6 +135,7 @@ const[tickettxt,setTicketTxt]=useState(false);
     };
   }, [isMenuBarOpen]);
 
+  
   return (
     <div>
       {showNotification && (
@@ -143,12 +144,12 @@ const[tickettxt,setTicketTxt]=useState(false);
 
       {/**nav layout */}
       <div className="bg-gray-200 lg:pl-10 lg:pt-10 rounded-xl mt-2 pt-5">
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col md:flex-row">
 
 
           {/**left section div */}
 
-          <div className="flex flex-row lg:flex-col">
+          <div className="flex flex-col">
             <div className="flex ">
               <div>
                 <button onClick={handleToggle}>
@@ -188,7 +189,7 @@ const[tickettxt,setTicketTxt]=useState(false);
 
             {/**            Current Date section        */}
 
-            <div className="flex ml-5 text-gray-600 lg:mt-5">
+            <div className="flex md:ml-5 text-gray-600 lg:mt-5 ml-auto pr-5">
               <div className="border-gray-600 border-2 w-[50px] h-[50px] text-center pt-1.5 rounded-full text-2xl">
                 <p className="lg:font-bold">{currentDate.getDate()}</p>
               </div>

@@ -1,34 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
 
 const AdminSignUp = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: "",
   });
-  
+  const [emailError, setEmailError] = useState("");
 
   function changeHandler(event) {
+    const { name, value } = event.target;
     setFormData((prevData) => ({
       ...prevData,
-      [event.target.name]: event.target.value,
+      [name]: value,
     }));
+
+    if (name === "email") {
+      validateEmail(value);
+    }
+  }
+
+  function validateEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setEmailError("Please enter a valid email address.");
+    } else {
+      setEmailError("");
+    }
   }
 
   const clickHandler = () => {
-    navigate("/AdminLogin");
-    console.log("Moving to SignUp page...");
+    if (!emailError && formData.email) {
+      navigate("/AdminLogin");
+      console.log("Moving to Login page...");
+    } else {
+      alert("Please enter a valid email address.");
+    }
   };
 
   return (
     <div className="mt-5 ">
-      <div className="w-[80vw] h-[85vh] lg:h-[auto] border bg-gray-300 ml-10 lg:ml-32 rounded-xl mb-2">
+      <div className="w-[80vw] h-[auto] border bg-gray-300 ml-10 lg:ml-32 rounded-xl mb-2 pb-3 pl-2">
         <div className="flex justify-between items-center mt-5">
           <div className="flex ml-3 ">
             <div>
               <img
-                className=" h-10 w-auto"
+                className="h-10 w-auto"
                 src="./images/Logo.svg"
                 alt="Logo"
               />
@@ -58,31 +75,33 @@ const AdminSignUp = () => {
               <p>Create an account to access the admin panel</p>
             </div>
 
-            {/* Email/password section */}
+            {/* Email section */}
             <div className="mt-5">
-              {/**mail section */}
-              <label className="w-full ">
-                <p className=" text-richblack-5 text-[0. 875rem] mb-1 leading-[1.375rem] ">
+              <label className="w-full">
+                <p className="text-richblack-5 text-[0.875rem] mb-1 leading-[1.375rem]">
                   Email Address <sup className="text-pink-200">*</sup>
                 </p>
                 <input
-                  className="bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px] "
+                  className="bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]"
                   required
                   type="email"
                   value={formData.email}
                   onChange={changeHandler}
-                  placeholder="Enter email Address"
+                  placeholder="Enter email address"
                   name="email"
                 />
+                {emailError && (
+                  <p className="text-red-500 text-xs mt-1">{emailError}</p>
+                )}
               </label>
             </div>
 
-            <div className="w-[200px] lg:w-[450px] h-[30px]  bg-blue-900 rounded-2xl text-center mt-5 ml-5 ">
-              <button className="text-white font-bold" onClick={clickHandler} >
+            <div className="w-[200px] lg:w-[450px] h-[30px] bg-blue-900 rounded-2xl text-center mt-5 ml-5">
+              <button className="text-white font-bold" onClick={clickHandler}>
                 Submit
-                </button>
+              </button>
             </div>
-            <div className="bg-blue-900 text-white  w-[60vw] pb-2 ml-5 lg:w-[30vw]  rounded-lg mt-8 ">
+            <div className="bg-blue-900 text-white w-[60vw] pb-2 ml-5 lg:w-[30vw] rounded-lg mt-8">
               <p className="pl-5">
                 Upon successful signup, a generated password will be sent to
                 your email address. Use this password to log in to the admin

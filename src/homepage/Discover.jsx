@@ -2,14 +2,14 @@ import React from "react";
 
 const Discover = () => {
   return (
-    <div className="mt-10 pb-10">
+    <div id="features" className="mt-10 pb-10 ">
       <div className="flex justify-center ">
         <div class="flex items-center justify-center">
           <div class="w-[250px] h-[65px] bg-blue-900 rounded-2xl absolute -z-10"></div>
           <button class="text-blue-900 text-lg w-[320px] border font-bold shadow bg-white rounded-3xl py-2 px-5">
             Discover SparkNex
           </button>
-              
+        
         </div>
       </div>
       <div className=" text-white flex flex-col lg:flex-row justify-center items-center  lg:justify-start lg:ml-20 mt-10">

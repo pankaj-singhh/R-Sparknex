@@ -36,10 +36,14 @@ function App() {
       {/**Routing */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/features" element={<Features />} />
+
+
+        {/* <Route path="/features" element={<Features />} />
 
         <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/contactus" element={<ContactUs />} /> */}
+
+        
         <Route path="/adminlogin" element={<AdminLogin />}></Route>
         <Route path="/adminSignup" element={<AdminSignUp />}></Route>
         <Route path="/dashboardlayout" element={<DashboardLayout />}>

@@ -2,7 +2,8 @@ import React from "react";
 
 const AboutSparkNex = () => {
   return (
-    <div className="mt-10 pb-10">
+    <div id="aboutus"
+     className="mt-10 pb-10">
       <div className="flex justify-center">
         <div class="flex items-center justify-center">
           <div class="w-[250px] h-[65px] bg-blue-900 rounded-2xl absolute -z-10"></div>
