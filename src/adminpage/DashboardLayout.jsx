@@ -4,6 +4,7 @@ import { Outlet, useNavigate } from "react-router-dom";
 import MenuBar from "../components/MenuBar";
 import { FiChevronRight } from "react-icons/fi";
 import { LuTicket } from "react-icons/lu";
+import { MdOutlineAnalytics } from "react-icons/md";
 
 import admndshbrdimg1 from "../assets/admndshbrdimg1.svg";
 import logo from "../assets/Logo.svg";
@@ -280,26 +281,26 @@ const[tickettxt,setTicketTxt]=useState(false);
           <div className="border-2 pl-5 w-[300px] lg:w-[14rem] h-[100px] rounded-xl mt-2 text-center ml-[10vw] lg:ml-10">
             <div className="flex ">
               {showDashbrd ? (
-                <div className="flex">
-                  <div>
-                    <img src={dashboardimg} alt="dashboardimg" />
+                <div className="flex text-blue-900">
+                  <div className="font-bold text-3xl">
+                  <MdOutlineAnalytics/>
                   </div>
                   <p className="text-blue-900 font-bold ml-4">Dashboard</p>
                   <button
-                    className="text-xl text-blue-900 ml-12 lg:ml-8"
+                    className="text-xl text-blue-900 ml-12 md:ml-10"
                     onClick={DashboardSectionHandler}
                   >
                     <FiChevronRight />
                   </button>
                 </div>
               ) : (
-                <div className="flex">
-                  <div>
-                    <img src={dashboardimg} alt="dashboardimg" />
+                <div className="flex text-red-400">
+                  <div className="font-bold text-3xl">
+                  <MdOutlineAnalytics/>
                   </div>
                   <p className="text-red-400 font-bold ml-4">Dashboard</p>
                   <button
-                    className="text-xl text-red-400 ml-12 lg:ml-8"
+                    className="text-xl text-red-400 ml-12 md:ml-10"
                     onClick={DashboardSectionHandler}
                   >
                     <FiChevronRight />
